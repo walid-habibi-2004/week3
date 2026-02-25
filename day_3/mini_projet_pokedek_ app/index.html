@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="logo-container">
+      <img src="logo.png" alt="Pokemon Logo" class="logo-img" />
+    </div>
+    <div class="content-wrapper">
+      <div class="pokedex">
+        <img src="pokedex.png" alt="Pokedex" class="pokedex-img" />
+        <div class="top-screen">
+          <img id="pokemon-image" src="" alt="Pokemon" />
+        </div>
+        <div class="bottom-info">
+          <h2 id="pokemon-name">Press random</h2>
+          <p id="pokemon-id"></p>
+          <p id="pokemon-height"></p>
+          <p id="pokemon-weight"></p>
+          <p id="pokemon-type"></p>
+          <p id="message"></p>
+        </div>
+        <button id="prev-btn" class="btn prev"></button>
+        <button id="random-btn" class="btn random"></button>
+        <button id="next-btn" class="btn next"></button>
+      </div>
+      <div class="instructions">
+        <h3>How to use:</h3>
+        <p>1- Press the <strong>green</strong> button to get a random Pokémon</p>
+        <p>2- Press the <strong>left</strong> and <strong>right</strong> buttons to see previous and next Pokémon.</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
