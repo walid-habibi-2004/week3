@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url('https://i.giphy.com/media/TxVVB6PfWMjE4/200.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFD700;
+    text-shadow: 0 0 10px #000, 0 0 20px #000;
+    font-family: 'Arial Black', 'Impact', system-ui, sans-serif;
+    letter-spacing: 6px;
+}
+
+.logo-top {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.logo-bottom {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1;
+    margin-top: -10px;
+}
+
+.character-box {
+    min-width: 400px;
+    min-height: 300px;
+    border: 3px solid #FFD700;
+    border-radius: 15px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+}
+
+.character-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.character-name {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFD700;
+}
+
+.character-detail {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.loading i {
+    font-size: 3em;
+    color: #FFD700;
+    animation: spin 1s linear infinite;
+}
+
+.loading-text {
+    font-size: 1.5em;
+    color: #FFD700;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.error-message {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #FF6B6B;
+    text-align: center;
+}
+
+.find-button {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    background-color: white;
+    color: #333;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.find-button:hover {
+    background-color: #FFD700;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.find-button:active {
+    transform: scale(0.98);
+}
+
+.find-button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
