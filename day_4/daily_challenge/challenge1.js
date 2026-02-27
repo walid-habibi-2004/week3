@@ -1,4 +1,4 @@
-// ==========
+// ==========> Exercice 1
 
 // date.js
 
@@ -25,3 +25,4 @@ const birthdate = "2000-01-01";
 const result = minutesLived(birthdate);
 
 console.log(`You have lived approximately ${result.toLocaleString()} minutes.`);
+
