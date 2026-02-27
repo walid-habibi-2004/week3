@@ -1,1 +1,3 @@
-
+This is a sample text file.
+Node.js makes file handling easy!
+Keep practicing 
