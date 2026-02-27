@@ -62,4 +62,44 @@ const result = minutesLived(birthdate);
 
 console.log(`You have lived approximately ${result.toLocaleString()} minutes.`);
 
+// ============> Exercice 3 date 3
+// date.js
 
+function getNextHoliday() {
+    const now = new Date();
+    const todayFormatted = now.toDateString();
+
+    const currentYear = now.getFullYear();
+
+    let holidayName = "Christmas";
+    let holidayDate = new Date(currentYear, 11, 25); // December = 11
+
+    if (now > holidayDate) {
+        holidayDate = new Date(currentYear + 1, 11, 25);
+    }
+
+    const difference = holidayDate - now;
+
+    const totalSeconds = Math.floor(difference / 1000);
+
+    const days = Math.floor(totalSeconds / (3600 * 24));
+    const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    return `
+Today is: ${todayFormatted}
+The next holiday is ${holidayName}
+It is in ${days} days and ${hours}:${minutes
+        .toString()
+        .padStart(2, "0")}:${seconds.toString().padStart(2, "0")} hours
+`;
+}
+
+module.exports = { getNextHoliday };
+
+// script.js
+
+const { getNextHoliday } = require("./date");
+
+console.log(getNextHoliday());
