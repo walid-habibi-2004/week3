@@ -1,5 +1,9 @@
-const { greet } = require("./greeting");
+// const { greet } = require("./greeting");
 
-const message = greet("Walid");
+// const message = greet("Walid");
 
-console.log(message);
+// console.log(message);
+
+const { showMessage } = require("./colorful-message");
+
+showMessage();
